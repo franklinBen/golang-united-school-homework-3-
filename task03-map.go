@@ -3,7 +3,7 @@ package homework
 import "sort"
 
 func sortMapValues(input map[int]string) (result []string) {
-	i := 0
+	i := 1
 	keys := make([]int, len(input))
 	for k := range input {
 		keys[i] = k
