@@ -1,6 +1,8 @@
 package homework
 
-func reverse(input []int64) (result []int64) {
-	//Place your code here
-	return
+func reverse(arr []int64) []int64 {
+	for i, j := 0, len(arr)-1; i < j; i, j = i+1, j-1 {
+		arr[i], arr[j] = arr[j], arr[i]
+	}
+	return arr
 }
